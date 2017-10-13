@@ -43,8 +43,8 @@ namespace BankAccount_Project
 
         public Client(string name, string userName, int pinNumber)
         {
-            this.name = name;
-            this.userName = userName;
+            this.name = "David Gomez";
+            this.userName = "DGomez27";
             this.pinNumber = 723443;
         }
 

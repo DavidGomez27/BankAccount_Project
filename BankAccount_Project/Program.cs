@@ -10,6 +10,11 @@ namespace BankAccount_Project
     {
         static void Main(string[] args)
         {
+            Client client1 = new Client("", "", 0);
+            Console.WriteLine(client1.GetInfo());
+
+
+
         }
     }
 }
