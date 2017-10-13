@@ -34,6 +34,25 @@ namespace BankAccount_Project
             set { this.pinNumber = value; }
         }
 
+        //constructors
+
+        public Client()
+        {
+
+        }
+
+        public Client(string name, string userName, int pinNumber)
+        {
+            this.name = name;
+            this.userName = userName;
+            this.pinNumber = 723443;
+        }
+
+        public virtual string GetInfo()
+        {
+            return name + " " + userName + " " + pinNumber;
+        }
+
 
 
     }
