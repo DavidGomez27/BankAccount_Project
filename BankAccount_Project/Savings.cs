@@ -20,13 +20,13 @@ namespace BankAccount_Project
 
         public Savings()
         {
-            this.savingsStart = 5000.00;
+            this.savingsStart = 8000.00;
         }
 
 
         public override void Balance()
         {
-            base.Balance(); Console.WriteLine("$" + viewBalance);
+            base.Balance(); Console.WriteLine("$" + (viewBalance + savingsStart));
         }
 
 
