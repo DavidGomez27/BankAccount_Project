@@ -36,12 +36,9 @@ namespace BankAccount_Project
 
         //constructors
 
+        
+
         public Client()
-        {
-
-        }
-
-        public Client(string name, string userName, int pinNumber)
         {
             this.name = "David Gomez";
             this.userName = "DGomez27";

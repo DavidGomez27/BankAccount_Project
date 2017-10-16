@@ -10,10 +10,9 @@ namespace BankAccount_Project
     {
 
         protected int accountNumber;
-        protected float viewBalance;
+        protected double viewBalance;
         protected string accountType;
-        protected float depositAmmount;
-        protected float withdrawalAmmount;
+        
 
 
         public int AccountNumber
@@ -22,7 +21,7 @@ namespace BankAccount_Project
             set { this.accountNumber = value; }
         }
 
-        public float ViewBalance
+        public double ViewBalance
         {
             get { return this.viewBalance; }
             set { this.viewBalance = value; }
@@ -34,16 +33,24 @@ namespace BankAccount_Project
             set { this.accountType = value; }
         }
 
-        public float DepositAmmount
+      
+
+
+        public virtual void Balance()
         {
-            get { return this.depositAmmount; }
-            set { this.depositAmmount = value; }
+            
         }
 
-        public float WithdrawalAmmount
+        public virtual double Withdrawal(double withdrawalAmt)
         {
-            get { return this.withdrawalAmmount; }
-            set { this.withdrawalAmmount = value; }
+            viewBalance -= withdrawalAmt;
+            return viewBalance;
+        }
+
+        public virtual double Deposit(double depositAmt)
+        {
+            viewBalance += depositAmt;
+            return viewBalance;
         }
     }
 }
