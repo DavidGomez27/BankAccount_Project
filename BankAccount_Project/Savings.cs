@@ -17,7 +17,7 @@ namespace BankAccount_Project
             set { this.savingsStart = value; }
         }
 
-
+        //My set savings balance
         public Savings()
         {
             this.savingsStart = 8000.00;

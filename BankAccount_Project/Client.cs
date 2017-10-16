@@ -11,8 +11,8 @@ namespace BankAccount_Project
 
         //fields
         protected string name;
-        protected string userName;
-        protected int pinNumber;
+        protected string checkingActNum;
+        protected string savingsActNum;
 
 
         //properties
@@ -22,16 +22,16 @@ namespace BankAccount_Project
             set { this.name = value; }
         }
 
-        public string UserName
+        public string CheckingActNum
         {
-            get { return this.userName; }
-            set { this.userName = value; }
+            get { return this.checkingActNum; }
+            set { this.checkingActNum = value; }
         }
 
-        public int PinNumber
+        public string SavingsActNum
         {
-            get { return this.pinNumber; }
-            set { this.pinNumber = value; }
+            get { return this.savingsActNum; }
+            set { this.savingsActNum = value; }
         }
 
         //constructors
@@ -41,13 +41,14 @@ namespace BankAccount_Project
         public Client()
         {
             this.name = "David Gomez";
-            this.userName = "DGomez27";
-            this.pinNumber = 723443;
+            this.checkingActNum = "Checking Acct# 567890";
+            this.savingsActNum = "Savings Acct# 836849";
         }
 
+        //Method  to call client info
         public virtual string GetInfo()
         {
-            return name + " " + userName + " " + pinNumber;
+            return name + " " + checkingActNum + " " + savingsActNum;
         }
 
 

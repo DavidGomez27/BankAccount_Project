@@ -13,7 +13,7 @@ namespace BankAccount_Project
 
             Checking checking1 = new Checking();
             Savings savings1 = new Savings();
-            int newTransaction = 1;
+            //selection variable for whatever number option user imputs
             int selection = 1;
             do
             {

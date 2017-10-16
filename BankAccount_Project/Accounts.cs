@@ -41,6 +41,7 @@ namespace BankAccount_Project
             
         }
 
+        //Set up to actually do the math of whatever is deposited or withdrawn
         public virtual double Withdrawal(double withdrawalAmt)
         {
             viewBalance -= withdrawalAmt;
