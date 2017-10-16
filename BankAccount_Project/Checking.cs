@@ -27,7 +27,7 @@ namespace BankAccount_Project
 
         public override void Balance()
         {
-            base.Balance(); Console.WriteLine("$" + (viewBalance + checkingStart));
+            base.Balance(); Console.WriteLine("New Checking Balance is $" + (viewBalance + checkingStart));
         }
 
 
